@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 // ── 설정 ─────────────────────────────────────────────────────────
 // 프록시 서버 주소. 로컬 개발: http://localhost:3001
 // 배포 시: 실제 서버 주소로 변경
-const PROXY_BASE = "https://speedcam-proxy.YOUR_SUBDOMAIN.workers.dev";
+const PROXY_BASE = "https://speedcam-proxy.worshiper4g.workers.dev";
 
 // ── 공통 유틸 ─────────────────────────────────────────────────────
 function haversine(lat1, lng1, lat2, lng2) {
